@@ -2,7 +2,7 @@
 
 A simple, responsive profile card with a **Light** and **Dark** theme toggle built using HTML, CSS, and JavaScript.
 
-**Live Demo:** https://shakibcodes.github.io/profile-card/
+**Live Link:** https://shakibcodes.github.io/profile-card/
 
 ## Features
 
