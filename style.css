@@ -11,19 +11,33 @@
     --body-bg: linear-gradient(90deg, rgb(48, 80, 129), rgb(95, 133, 247));
     --social-bg:rgb(46, 70, 99);
     --card-border:4px solid rgb(135, 195, 244);
+    --card-btn-bg: rgb(71, 78, 100);
+    --card-btn-clr: white;
+    --card-btn-border: 1px solid rgb(123, 131, 158);
+    --card-btn-hover-bg: rgb(107, 118, 154);
+    --btn-border-clr: rgb(52, 56, 71);
+    --card-shadow: rgba(0, 0, 0, 0.468);
+    --icon-filter: none;
  }
  [data-theme="light"] {
-    --card-bg-clr: rgb(227, 227, 227);
-    --card-txt-clr: rgb(2, 2, 2);
-    --card-cnt-head: rgb(7, 7, 7);
-    --card-cnt-spn:rgb(204, 135, 218);
-    --card-footer-bgclr: rgb(180, 180, 180);
-    --body-bg: linear-gradient(90deg, #fce4ec, #e57373);
+    --card-bg-clr: #ffffff;
+    --card-txt-clr: #555555;
+    --card-cnt-head: #2c2c2c;
+    --card-cnt-spn: #c62828;
+    --card-footer-bgclr: #f5f5f5;
+    --body-bg: linear-gradient(135deg, #fce4ec, #e57373, #c62828);
     /* dark light buttons style*/
-    --btn-bg: rgb(185, 185, 185);
-    --btn-clr:rgb(0, 0, 0);
-    --social-bg:rgb(165, 104, 113);
-    --card-border:4px solid pink;
+    --btn-bg: #ffffff;
+    --btn-clr: #333333;
+    --btn-border-clr: #ddd;
+    --social-bg: #fce4ec;
+    --card-border: 4px solid #e57373;
+    --card-btn-bg: #e57373;
+    --card-btn-clr: #ffffff;
+    --card-btn-border: 1px solid #ef9a9a;
+    --card-btn-hover-bg: #ef5350;
+    --card-shadow: rgba(0, 0, 0, 0.12);
+    --icon-filter: brightness(0) saturate(100%) invert(20%);
  }
  
  body{
@@ -56,7 +70,7 @@
             align-items: center;
             text-align: center;
             box-sizing: border-box;
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.468);
+            box-shadow: 0 12px 25px var(--card-shadow);
 
         }
         .card-cnt p{
@@ -68,7 +82,7 @@
             background-color: var(--btn-bg);
             color: var(--btn-clr);
             border-radius: 100px;
-            border: 1px solid rgb(52, 56, 71);
+            border: 1px solid var(--btn-border-clr);
             cursor: pointer;
         }
         .social a{
@@ -101,11 +115,11 @@
         }
         .card-btn{
             padding: 15px 25px;
-            background-color: rgb(71, 78, 100);
+            background-color: var(--card-btn-bg);
             border-radius: 100px;
-            color: white;
+            color: var(--card-btn-clr);
             font-size: 15px;
-            border: 1px solid rgb(123, 131, 158);
+            border: var(--card-btn-border);
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -114,13 +128,15 @@
 
         }
         .card-btn:hover{
-            background-color: rgb(107, 118, 154)
+            background-color: var(--card-btn-hover-bg)
+        }
+        .card-btn img{
+            filter: var(--icon-filter);
         }
         .social img{
-            background-color: var(--social-bg);
             padding: 8px;
-            border-radius: 50%;
             display: flex;
+            filter: var(--icon-filter);
         }
 
 

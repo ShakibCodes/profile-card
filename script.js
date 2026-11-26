@@ -6,7 +6,7 @@ btn.forEach(button => {
         document.documentElement.setAttribute("data-theme", theme);
 
         if(theme ==="dark"){
-            imge.src="dark.jpg";
+            imge.src="dark.png";
         }
         else{
             imge.src="light.png";
