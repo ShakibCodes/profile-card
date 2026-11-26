@@ -9,15 +9,15 @@
 <body>
     <div class="container">
         <div class="theme-btn">
-            <button>☀️ light</button>
-            <button>🌙 dark</button>
+            <button data-theme="light">☀️ light</button>
+            <button data-theme="dark">🌙 dark</button>
         </div>
 
         <div class="card">
             <div class="card-cnt">
-                <img class="card-img" src="image.png" alt="random image">
+                <img id="thm-img" class="card-img" src="dark.jpg" alt="random image">
                 <h2>Lexa Smith</h2>
-                <p style="color: rgb(195, 195, 195);">Passionate frontend developer crafting modern, accessible web experiences. Currently exploring the <span>MERN stack</span> and interactive design.?</p>
+                <p>Passionate frontend developer crafting modern, accessible web experiences. Currently exploring the <span>MERN stack</span> and interactive design.?</p>
                 <button class="card-btn">
                     <img src="icons/email.svg" alt="">
                     Get in touch</button>
@@ -39,5 +39,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
