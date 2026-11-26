@@ -1,0 +1,93 @@
+ body{
+        background: linear-gradient(90deg, rgb(48, 80, 129), rgb(95, 133, 247));
+            
+        }
+        .card-img{
+            border-radius: 50%;
+            width:90px;
+            height:90px;
+            border: 4px solid rgb(135, 195, 244);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            min-height: 100vh;
+            justify-content: center;
+           
+        }
+        .card{
+            background-color: rgb(52, 56, 71);
+            color: white;
+            width: 390px;
+            height: 450px;
+            border-radius: 19px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.468);
+
+        }
+        .theme-btn button{
+            padding: 6px 24px;
+            font-size: 17px;
+            background-color: rgb(52, 56, 71);
+            color: white;
+            border-radius: 100px;
+            border: 1px solid rgb(52, 56, 71);
+            cursor: pointer;
+        }
+        .social a{
+            color: white;
+            text-decoration: none;
+        }
+
+        
+        .social{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            border-radius: 0 0 19px 19px;
+            background-color: rgb(31, 31, 57);
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card-cnt{
+            padding: 30px 10%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-cnt p span{
+            text-decoration: underline;
+            color:rgb(95, 143, 247);
+        }
+        .card-btn{
+            padding: 15px 25px;
+            background-color: rgb(71, 78, 100);
+            border-radius: 100px;
+            color: white;
+            font-size: 15px;
+            border: 1px solid rgb(123, 131, 158);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap:11px;
+            transition: all 0.3s ease;
+
+        }
+        .card-btn:hover{
+            background-color: rgb(107, 118, 154)
+        }
+        .social img{
+            background-color: rgb(46, 70, 99);
+            padding: 8px;
+            border-radius: 50%;
+            display: flex;
+        }
