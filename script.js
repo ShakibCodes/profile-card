@@ -1,15 +1,7 @@
-const btn = document.querySelectorAll(".theme-btn button");
-const imge = document.getElementById("thm-img");
-btn.forEach(button => {
-    button.addEventListener("click", () => {
-        const theme = button.dataset.theme;
-        document.documentElement.setAttribute("data-theme", theme);
+function setLight() {
+    document.body.classList.add("light-mode");
+}
 
-        if(theme ==="dark"){
-            imge.src="dark.png";
-        }
-        else{
-            imge.src="light.png";
-        }
-    });
-});
+function setDark() {
+    document.body.classList.remove("light-mode");
+}

@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile Card</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <div class="theme-btn">
-            <button data-theme="light">☀️ light</button>
-            <button data-theme="dark">🌙 dark</button>
+            <button onclick="setLight()">☀️ light</button>
+            <button onclick="setDark()">🌙 dark</button>
         </div>
 
         <div class="card">
             <div class="card-cnt">
-                <img id="thm-img" class="card-img" src="dark.png" alt="random image">
+                <img class="card-img dark-img" src="dark.png" alt="profile image dark">
+                <img class="card-img light-img" src="light.png" alt="profile image light">
                 <h2>Shakib Sayyed</h2>
                 <p>Passionate Backend developer crafting scalable backends. Currently exploring the <span>Spring Boot</span> and database and management systems</p>
                 <button class="card-btn">
-                    <img src="icons/email.svg" alt="">
+                    <img src="icons/email.svg" alt="email icon">
                     Get in touch</button>
             </div>
 
             <div class="social">
                 <a href="#https://www.tiktok.com/" target="_blank">
-                    <img src="icons/tiktok.svg" alt="insta logo">
+                    <img src="icons/tiktok.svg" alt="tiktok logo">
                 </a>
                 <a href="https://www.instagram.com/" target="_blank">
-                    <img src="icons/instagram.svg" alt="insta logo">
+                    <img src="icons/instagram.svg" alt="instagram logo">
                 </a>
                 <a href="https://x.com/home" target="_blank">
-                    <img src="icons/twitter.svg" alt="insta logo">
+                    <img src="icons/twitter.svg" alt="twitter logo">
                 </a>
                 <a href="https://shakibsayyed.vercel.app/" target="_blank">
-                    <img src="icons/website.svg" alt="insta logo">
+                    <img src="icons/website.svg" alt="website logo">
                 </a>
             </div>
         </div>
