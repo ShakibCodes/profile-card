@@ -19,7 +19,7 @@
     --card-shadow: rgba(0, 0, 0, 0.468);
     --icon-filter: none;
  }
- [data-theme="light"] {
+ html[data-theme="light"] {
     --card-bg-clr: #ffffff;
     --card-txt-clr: #555555;
     --card-cnt-head: #2c2c2c;
